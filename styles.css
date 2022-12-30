@@ -1,0 +1,126 @@
+/*
+    Name: Claire Surbeck
+    Date: October 23, 2022
+    Section: CSE 154 AA
+    This is the styles.css page that is used by my index.html page to style my website for creating
+    your own art gallery. It features styling for the header, the main part of the page, the pieces
+    of art, and the gallery that is generated.
+  */
+
+header {
+  background-image: url("img/background-water-lilies-header.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+header,
+.images,
+#gallery-images {
+  display: flex;
+}
+
+header,
+main > p,
+h2,
+button {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.images,
+#gallery-images {
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+header p {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+main {
+  width: 80%;
+  background-color: rgb(239, 224, 252);
+  margin: auto;
+  text-align: center;
+}
+
+main > p {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.images {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+article {
+  padding: 20px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  justify-content: center;
+}
+
+.selected {
+  background-color: rgb(152, 43, 255);
+}
+
+article:hover,
+button:hover {
+  background-color: rgb(204, 156, 248);
+}
+
+#create-button {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.button-frame {
+  display: none;
+}
+
+.black-frame-img {
+  border: 15px solid black;
+}
+
+.white-frame-img {
+  border: 10 px solid rgb(248, 249, 240);
+  padding: 10px;
+}
+
+.gold-frame-img {
+  border: 10px dotted gold;
+  padding: 10px;
+}
+
+.gold-frame-img,
+.black-frame-img,
+.white-frame-img,
+button {
+  background-color: white;
+}
+
+button {
+  font-size: 18px;
+  margin: 10px;
+}
